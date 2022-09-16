@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container{
+    width: 40%;
+    height: 90%;
+.    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: #EBDDE2;
+    width: 65%;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(98, 98, 98, 0.24) , -10px -10px 20px rgba(111, 110, 110, 0.322);
+    border-top: 10px rgb(210, 203, 202);
+}
+form h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.divcontainer{
+    border: 1px solid rgba(0, 0, 0, 0.645);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    padding: 4px 10px;
+}
+.divcontainer input{
+    width: 85%;
+    height: 99%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+.checkbox{
+    border: none;
+}
+.divcontainer select{
+    width: 100%;
+    padding: 10px;
+}
+.select{
+    padding: 0;
+    border: none;
+}
+select{
+    font-size: 16px;
+}
+select option{
+    font-size: 15px;
+}
+.gender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.genderbox{
+    border: none;
+    margin-left: -18px;
+}
+.gender input{
+    margin-right: 3px;
+}
+        </style>
+        <title>
+            <b>Registration Form</b>
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h1>Registration Form</h1>
+		<label>Name:</label>
+                <div class="divcontainer">
+		    <input type="name" name="" id="" placeholder="Enter Name..." />
+                </div>
+		<label>Email ID:</label>
+                <div class="divcontainer">
+                    <input type="email" name="" id="" placeholder="Enter Email..." />
+                </div>
+		<label>Mobile:</label>
+                <div class="divcontainer">
+                    <input type="mobile" name="" id="" placeholder="Enter Mobile..." />
+                </div>
+		<label>City:</label>
+                <div class="divcontainer">
+                    <input type="city" name="" id="" placeholder="Enter City..." />
+                </div>
+		<label>State:</label>
+                <div class="divcontainer">
+                    <input type="state" name="" id="" placeholder="Enter State..." />
+                </div>
+		<label>Country:</label>
+                <div class="divcontainer select">	   
+                    <select id="country" name="country" class="form-control">
+                        <option>Afghanistan</option>
+                        <option>Argentina</option>
+                        <option>Brazil</option>
+                        <option>Cuba</option>
+                        <option>Denmark</option>
+                        <option>Ethiopia</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>Hungary</option>
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Korea</option>
+                        <option>Qutar</option>
+                    </select>
+                </div>
+		   <label>Gender:</label>
+                <div class="divcontainer genderbox">
+                    <div class="gender" id="male">
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender" id="female">
+                        <input type="radio" name="gender" id="female" />
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+		<label>Password:</label>
+                <div class="divcontainer">
+                    <input type="password" name="" id="" placeholder="Enter password..." />
+                </div>
+		<label>Repeat Password:</label>
+                <div class="divcontainer">
+                    <input type="password" name="" id="" placeholder="Re-Enter password..." />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
